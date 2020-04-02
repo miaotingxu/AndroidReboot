@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +7,125 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:onClick="reboot1"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        android:text="Android重启第一种方式(root权限)" />
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="reboot1"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android重启第一种方式(root权限)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="reboot2"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android重启第二种方式" />
+
+        <TextView
+            android:id="@+id/tv_increase_volume"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="increaseVolume"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 增大音量" />
+
+        <TextView
+            android:id="@+id/tv_decrease_volume"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="decreaseVolume"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 减小音量" />
+
+        <TextView
+            android:id="@+id/tv_increase_brigdet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="increaseBridget"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 增大亮度(写入设置权限)" />
+
+        <TextView
+            android:id="@+id/tv_decrease_brigdet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="decreaseBridget"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 减小亮度(写入设置权限)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="checkScreenOnOff"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 检测屏幕亮屏(设备管理器权限)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="requestDeviceAdmin"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 申请设备管理器权限" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="checkScreenOn"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 屏幕亮屏" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:onClick="checkScreenOff"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Android 屏幕灭屏(设备管理器权限)" />
+
+    </LinearLayout>
+
+</ScrollView>
