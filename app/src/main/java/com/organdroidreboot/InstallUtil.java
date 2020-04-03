@@ -51,7 +51,7 @@ public class InstallUtil {
      */
     private void startInstallN() {
         //参数1 上下文, 参数2 在AndroidManifest中的android:authorities值, 参数3  共享的文件
-        Uri apkUri = FileProvider.getUriForFile(mAct, "${applicationId}.fileProvider", new File(mPath));
+        Uri apkUri = FileProvider.getUriForFile(mAct, BuildConfig.APPLICATION_ID + ".fileProvider", new File(mPath));
         Intent install = new Intent(Intent.ACTION_VIEW);
         //由于没有在Activity环境下启动Activity,设置下面的标签
         install.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
